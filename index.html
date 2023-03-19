@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/anonymous.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Portafolio</title>
+</head>
+<body>
+<br>
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Alejandro</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CV</a></li>
+                    <li><a href="#cursos" onclick="seleccionar()">CURSOS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#referencias" onclick="seleccionar()">REFERENCIAS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <header class="bg_animate">
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/perfil.jpg" alt="fotoPerfil">
+                </div>
+                <h1><span class="maquina">Alejandro Morales</h1></span>
+                <h2>Técnico en programación</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/RandallDamm22/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/david-alejandro-morales-martinez-94252a14a"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </header>
+    </header>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy David Alejandro Morales Martinez.</span> 
+            Joven con pasión por su profesión, excelente capacidad de organización y facilidad para el trabajo en equipo. 
+            Persona muy adaptable a todo tipo de entornos.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad</strong>
+                            24 años
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            72 95 51 25 07
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            moralesmartinezd96@gmail.com
+                        </li>
+                    
+                        <li>
+                            <strong>Dirección</strong>
+                            Tecámac, Edo.Méx.
+                        </li>
+                        <li>
+                            <strong>Ocupación</strong>
+                            <span>Pasante de la Licenciatura en Técnologias de la Información</span>
+                        </li>
+                    </ul>
+                </div>
+               
+            <button id="download-btn">
+                Descargar CV <i class="fa-solid fa-download" ></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+   
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formación</h3>
+                    <div class="item izq ov-btn-slide-left">
+                        <h4>Licenciatura en Tecnologías de la Información</h4>
+                        <span class="casa">Universidad Autonoma del Estado de Hidalgo</span><br>
+                        <span class="fecha">2019 - Actualidad</span>
+                        <li>Pasante.</li>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq ov-btn-slide-left">
+                        <h4>Tecnico en Programación</h4>
+                        <span class="casa">Colegio de Estudios
+                            Cientificos y Tecnologicos del Estado de México. 
+                            Plantel Tecámac.
+                        </span><br>
+                        <span class="fecha">2013 - 2016</span>
+                        <li>Titulo Técnico en Programación No.B48103.</li>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der ov-btn-slide-right">
+                        <h4>Técnico en Mantenimiento</h4>
+                        <span class="casa">PC Industrial S.A de S.V.</span><br>
+                        <span class="fecha">2019 - 2022</span>
+                        <li>Creación de reportes periódicos de tareas desempeñadas e incidencias resuletas.</li>
+                        <li>Asesoramiento técnico a clientes, soporte y realización de seguimiento.</li>
+                        <li>Verificación del estado de equipos y realización de diagnóstico.</li>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="cursos" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>CURSOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/web1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Introducción al Desarrollo Web II (40h)</h3>
+                        <p>Google Activate</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/cloudComputing.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Cloud Computing (40h)</h3>
+                        <p>Google Activate</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/diplomado2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diplomado Técnico en Sistemas Informáticos</h3>
+                        <p>Fundación Carlos Slim</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/web1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Introducción al Desarrollo Web (40h)</h3>
+                        <p>Google Activate</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/appsMoviles.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo Apps Moviles (40h)</h3>
+                        <p>Google Activate</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pixir.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Ciencia de Datos (20h)</h3>
+                        <p>Pixir S.A de C.V.s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- SECCION SKILLS -->
+     <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades tecnicas</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>UML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ingles</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="container">
+                <div class="cardProyecto front">
+                    <img src="img/uaeh.jpg" alt="" >
+                </div>
+                <div class="cardProyecto back">
+                    <h4><b>Proyecto terminal</b></h4>
+                    <h5 style="text-align: center;"><b>Prototipo para el monitoreo de signos vitales como herramienta para el servicio medico de la ESTi</b></h5>
+                    <p style="text-align: justify;">
+                        ● Prototipo diseñado para monitorear y registrar signos vitales implementando sensores (MAX30102, MLX90614, KY-037), tarjetas de adquisicion
+                        de datos (ESP32), pagina web desarrollada con: PHP, HTML, CSS, JavaScript, bootstrap, administrador de base de datos PHPMyAdmin.
+
+                        </p>
+                </div>
+            </div>
+        </div>
+            </section>
+    
+    <!-- Referencias -->
+    <section id="referencias" class="referencias">
+        <div class="contenido-seccion">
+            <h2>REFERENCIAS</h2>
+            <div class="card-container">
+                 <!-- CARD -->
+                <div class="card">
+                    <div class="head">
+                        <div class="circle"></div>
+                        <div class="img">
+                            <img src="img/REF_FER.jpg" alt="imagen1">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h4>Allyson Fernanda Lopez Meneses</h4>
+                            <h6>Jefe de área Pc Industrial S.A de S.V.</h6>
+                            <h6>55 12 73 73 32</h6>
+                    </div>
+                    <div class="contact">
+                        <a href="https://wa.me/7295512507">Contactar</a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="card">
+                    <div class="head">
+                        <div class="circle"></div>
+                        <div class="img">
+                            <img src="img/ref_ale.jpeg" alt="imagen1">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h4>Alejandro Corona Mejia</h4>
+                            <h6>Desarrollador Jr Capgemine</h6>
+                            <h6>55 66 97 53 45</h6>
+                            <h6>Amigo</h6>
+                    </div>
+                    <div class="contact">
+                        <a href="https://wa.me/7295512507">Contactar</a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="card">
+                    <div class="head">
+                        <div class="circle"></div>
+                        <div class="img">
+                            <img src="img/ref_arturo.jpg" alt="imagen1">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h4>Jose Arturo Badillo Olguin</h4>
+                            <h6>Estudiante</h6>
+                            <h6>77 21 31 96 00</h6>
+                            <h6>Amigo</h6>
+                    </div>
+                    <div class="contact">
+                        <a href="https://wa.me/7295512507">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+               
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+              
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Tecámac, Estado de México.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 72 95 51 25 07 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: moralesmartinezd96@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes"><br>
+            <h4>Morales Martinez David Alejandro - 2023</h4>
+        </div>
+  
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
